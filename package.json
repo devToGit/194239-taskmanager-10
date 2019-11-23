@@ -4,8 +4,10 @@
   "private": true,
   "description": "Учебный проект «Менеджер задач» от HTML Academy",
   "scripts": {
-    "eslint": "eslint src/**/*.js",
-    "test": "npm run eslint"
+    "eslint": "eslint src/main.js",
+    "test": "npm run eslint",
+    "lint": "eslint --debug src/",
+    "lint:write": "eslint --debug src/ --fix"
   },
   "devDependencies": {
     "eslint": "6.1.0",
