@@ -1,4 +1,4 @@
-export const craeteSiteMenuTemplate = () => {
+export const createSiteMenuTemplate = () => {
   return (
     `<section class="control__btn-wrap">
             <input
