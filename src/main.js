@@ -60,6 +60,7 @@ const boardComponent = new BoardComponent();
 render(siteMainElement, boardComponent.getElement(), RenderPosition.BEFOREEND);
 
 const tasks = generateTasks(TASK_COUNT);
+
 const isAllTasksArchived = tasks.every((task) => task.isArchive);
 if (isAllTasksArchived) {
   render(boardComponent.getElement(), new NoTasksComponent().getElement(), RenderPosition.BEFOREEND);
