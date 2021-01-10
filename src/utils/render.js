@@ -13,10 +13,10 @@ export const createElement = (template) => {
 export const render = (container, component, place) => {
   switch (place) {
     case RenderPosition.AFTERBEGIN:
-      container.prepend(component.getElement);
+      container.prepend(component.getElement());
       break;
     case RenderPosition.BEFOREEND:
-      container.append(component.getElement);
+      container.append(component.getElement());
       break;
   }
 };
@@ -34,6 +34,6 @@ export const replace = (newComponent, oldComponent) => {
 };
 
 export const remove = (component) => {
-  element.getElement().remove();
+  component.getElement().remove();
   component.removeElement();
 };

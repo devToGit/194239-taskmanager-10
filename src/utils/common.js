@@ -6,5 +6,5 @@ export const formatTime = (date) => {
   const hours = castTimeFormat(date.getHours() % 24);
   const minutes = castTimeFormat(date.getMinutes());
 
-  return `${hours}:${minutes} ${interval}`;
+  return `${hours}:${minutes}`;
 };
