@@ -19,12 +19,14 @@
     "style-loader": "2.0.0",
     "webpack": "4.41.2",
     "webpack-cli": "3.3.10",
-    "webpack-dev-server": "3.9.0"
+    "webpack-dev-server": "^3.11.1"
   },
   "engines": {
     "node": "10"
   },
   "dependencies": {
+    "chart.js": "2.9.4",
+    "chartjs-plugin-datalabels": "0.7.0",
     "flatpickr": "4.6.9",
     "he": "1.2.0",
     "moment": "2.29.1"
